@@ -14,7 +14,8 @@ export class AppComponent {
   items : Wishitem[] = [
     new Wishitem('To Learn Angular'),
     new Wishitem('Get coffee', true),
-    new Wishitem('Find grass that cuts itself')
+    new Wishitem('Find grass that cuts itself'),
+    new Wishitem('test item')
   ];
   title = 'Wishlist';
   
