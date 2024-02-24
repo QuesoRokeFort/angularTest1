@@ -1,13 +1,21 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';  // Import CommonModule
 import { RouterOutlet } from '@angular/router';
+import { Wishitem } from '../shared/models/wishitem';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [CommonModule],  // Add CommonModule to the imports array
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']  // Fix the typo in styleUrls
 })
 export class AppComponent {
-  title = 'wishlist';
+  items : Wishitem[] = [
+    new Wishitem('To Learn Angular'),
+    new Wishitem('Get coffee', true),
+    new Wishitem('Find grass that cuts itself')
+  ];
+  title = 'Wishlist';
+  
 }
