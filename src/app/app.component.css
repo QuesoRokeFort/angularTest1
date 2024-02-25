@@ -1,3 +1,9 @@
-.wish-list{
+/* styles.css (or your stylesheet file) */
+.wish-list {
     list-style: none;
-}
+  }
+  
+  .crossed-out-text {
+    text-decoration: line-through;
+  }
+  

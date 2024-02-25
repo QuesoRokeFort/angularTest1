@@ -17,10 +17,16 @@ export class AppComponent {
     new Wishitem('Find grass that cuts itself'),
     new Wishitem('another test'),
   ];
+
+  newWishText='';
   title = 'Wishlist';
 
   toggleItem(item : Wishitem){
     item.isComplete = !item.isComplete;
     console.log(item);
+  }
+  addNewWish(){
+    // add a wish
+    //clear a texbox
   }
 }
