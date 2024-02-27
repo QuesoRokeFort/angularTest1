@@ -1,0 +1,7 @@
+.wish-list {
+    list-style: none;
+    padding:0;
+  }
+.crossed-out-text {
+  text-decoration: line-through;
+}
